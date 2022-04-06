@@ -4,6 +4,7 @@
 //
 //  Created by Максим Самусь on 06.04.2022.
 //
+import Spring
 
 class AnimationsData {
     
