@@ -15,15 +15,15 @@ class ViewController: UIViewController {
     private var animation = Animation.getAnimation()
     
     @IBAction func runSpringAnimation(_ sender: SpringButton) {
+        springAnimationView.animation = AnimationsData.shared.animations.randomElement()?.rawValue ?? ""
+        springAnimationView.curve = AnimationsData.shared.curves.randomElement()?.rawValue ?? ""
+        springAnimationView.force = CGFloat(Float.random(in: 1...1.5))
+        springAnimationView.duration = CGFloat(Float.random(in: 1...1.5))
+        springAnimationView.delay = CGFloat(Float.random(in: 0.1...0.5))
         springAnimationLabel.text = animation.viewDescription
-        springAnimationView.animation = animation.preset
-        springAnimationView.curve = animation.curve
-        springAnimationView.force = CGFloat(animation.force)
-        springAnimationView.duration = CGFloat(animation.duration)
-        springAnimationView.delay = CGFloat(animation.delay)
         
-        animation = Animation.getAnimation()
-        sender.setTitle("Run \(animation.preset)", for: .normal)
+        springAnimationView.animate()
+        sender.setTitle("Run \(springAnimationView.animation)", for: .normal)
     }
 }
 
