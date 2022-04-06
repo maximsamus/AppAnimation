@@ -11,6 +11,5 @@ class AnimationsData {
     static let shared = AnimationsData()
     
     let animations = Spring.AnimationPreset.allCases
-    
     let curves = Spring.AnimationCurve.allCases
 }
