@@ -60,7 +60,6 @@
 				B18B50E7F42DDA00B51BC5DE /* Pods-AppAnimation.debug.xcconfig */,
 				89B8A3A3A6D2C55E0050A7B4 /* Pods-AppAnimation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +84,7 @@
 		F704C32227FD174100BBDD27 /* AppAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				F704C33D27FDB9ED00BBDD27 /* Models */,
 				F704C34027FDBA2700BBDD27 /* Services */,
 				F704C33727FDB92A00BBDD27 /* App */,
 				F704C33827FDB95000BBDD27 /* ViewControllers */,
@@ -108,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				F704C32727FD174100BBDD27 /* ViewController.swift */,
-				F704C33D27FDB9ED00BBDD27 /* Models */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
