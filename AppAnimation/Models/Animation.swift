@@ -8,9 +8,9 @@
 struct Animation {
     let preset: String
     let curve: String
-    let force: Double
-    let duration: Double
-    let delay: Double
+    let force: Float
+    let duration: Float
+    let delay: Float
     
     var viewDescription: String {
          """
@@ -24,9 +24,9 @@ struct Animation {
         Animation(
             preset: AnimationsData.shared.animations.randomElement()?.rawValue ?? "",
             curve: AnimationsData.shared.curves.randomElement()?.rawValue ?? "",
-            force: Double.random(in: 1...3),
-            duration: Double.random(in: 1...2),
-            delay: Double.random(in: 0.1...1)
+            force: Float.random(in: 1...3),
+            duration: Float.random(in: 1...2),
+            delay: Float.random(in: 0.1...1)
         )
     }
 }

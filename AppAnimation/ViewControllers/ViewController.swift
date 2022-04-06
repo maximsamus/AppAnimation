@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         springAnimationLabel.text = animation.viewDescription
         springAnimationView.animation = animation.preset
         springAnimationView.curve = animation.curve
-        springAnimationView.force = animation.force
-        springAnimationView.duration = animation.duration
-        springAnimationView.delay = animation.delay
+        springAnimationView.force = CGFloat(animation.force)
+        springAnimationView.duration = CGFloat(animation.duration)
+        springAnimationView.delay = CGFloat(animation.delay)
         
         animation = Animation.getAnimation()
         sender.setTitle("Run \(animation.preset)", for: .normal)
